@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang='en-CA'>
+    <head>
+        <title>NHL Stats</title>
+        <link rel='stylesheet' href='https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css'>
+        <style>
+            html {
+                font-family:'Segoe UI', Tahoma, sans-serif;
+            }
+            body::after {
+                content: '';
+                background-image: url('background.jpg');
+                background-repeat: repeat-y;
+                background-size: cover;
+                opacity: 0.15;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                position: absolute;
+                z-index: -1;   
+            }
+            tr {
+                background-color: rgba(255, 255, 255, 0.7) !important;
+            }
+        </style>
+    </head>
+<body>
+    <h1>NHL Stats</h1>
+
+    <table id='allStats' class='table'>
+        <thead>
+            <tr>
+                <th>Ranking</th>
+                <th>Team</th>
+                <th>Games played</th>
+                <th>Wins</th>
+                <th>Losses</th>
+                <th>Overtime losses</th>
+                <th>Points</th>
+            </tr>
+        </thead>
+    </table>
+
+    <script src='https://code.jquery.com/jquery-3.4.1.slim.min.js' integrity='sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=' crossorigin='anonymous'></script>
+    <script src='https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js' defer></script>
+    <script src='main.js' defer></script>
